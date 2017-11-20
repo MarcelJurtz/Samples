@@ -8,6 +8,7 @@ namespace ServiceStackDemo
 {
     [Route("/entry", "POST")]
     [Route("/entry/{Amount}/{Time}", "POST")] // Supports regular time format
+    [RecordIpFilter]
     public class Entry : IReturn<EntryResponse>
     {
         public DateTime Time { get; set; }

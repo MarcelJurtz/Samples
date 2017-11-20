@@ -19,7 +19,7 @@ namespace ServiceStackDemo
             if (trackedData == null)
                 trackedData = new TrackedData { Goal = 300, Total = 0 };
 
-            return new StatusResponse { Goal = trackedData.Goal, Total = trackedData.Total };
+            return new StatusResponse { Goal = trackedData.Goal, Total = trackedData.Total, Message = "" };
             //return new StatusResponse { Goal = 300, Total = 100 };
         }
     }

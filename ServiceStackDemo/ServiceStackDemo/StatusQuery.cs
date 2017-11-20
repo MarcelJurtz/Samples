@@ -16,10 +16,12 @@ namespace ServiceStackDemo
         public DateTime Date { get; set; }
     }
 
+    [LastIpFilter]
     public class StatusResponse
     {
         public int Total { get; set; }
         public int Goal { get; set; }
+        public string Message { get; set; }
         public StatusResponse StatusResponseInfo { get; set; } // Gets automatically populated with exception data
     }
 }

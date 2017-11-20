@@ -38,6 +38,7 @@ namespace Consumer
             {
                 statusResponse = client.Post(new StatusQuery { Date = DateTime.Now });
                 Console.WriteLine("{0} / {1}", statusResponse.Total, statusResponse.Goal);
+                Console.WriteLine("Last IP: " + statusResponse.Message);
             }
             catch(WebServiceException exception)
             {
